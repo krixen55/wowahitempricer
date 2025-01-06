@@ -5,7 +5,7 @@ BLIZZARD_API_URL = "https://us.api.blizzard.com/data/wow/"
 BNET_TOKEN_URI = "https://us.battle.net/oauth/token"
 BNET_AUTH_URI = "	https://us.battle.net/oauth/authorize"
 
-ITEM_ID = "68008"
+ITEM_ID = "35226"
 REGION = "en_US"
 
 def get_realm_indexes(region="en_US", access_token="secret"):
@@ -93,7 +93,7 @@ if __name__ == "__main__":
 
         if len(sorted_data) >= 3:
             for name, value in sorted_data[:3]:
-                print(f"Name: {name}, Value: {value}")
+                print(f"Name: {name}, Value: {str(value)[:-4]}")
         else:
             for name, value in sorted_data:
-                print(f"Name: {name}, Value: {value}")
+                print(f"Name: {name}, Value: {str(value)[:-4]}")

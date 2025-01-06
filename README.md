@@ -25,7 +25,9 @@ Once you have the client id and secret, input them into the "secrets.json" file.
 
 ## Running the code
 
-I didn't create any CLI for this, open up the ah_pricer.py file and at the top, change 
+### AH Item Pricer
+
+I didn't create any CLI for this, open up the ah_item_pricer.py file and at the top, change 
 
 ITEM_ID - to the item you are trying to price, use wowhead to find item id
 
@@ -40,3 +42,19 @@ python ah_pricer.py
 by default, it prints the 3 cheapest options... however, you can play with the sorted data in the main function anyway you want. use GPT if you are not used to coding
 
 Thanks for checking this out, if there is a lot of intrest, i can improve on this in the future
+
+### Pet Pricer
+
+Pets are all considered 'pet cage' for the item id, but have species ID. To use this code, at the top
+
+REGION - to the region you are using
+
+SPECIES_IDS - list of species IDs you are looking for. use the first column (ID) of  the following link 
+
+https://wowpedia.fandom.com/wiki/BattlePetSpeciesID
+
+then run 
+
+```
+python pet_pricer.py
+```

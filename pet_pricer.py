@@ -5,11 +5,9 @@ BLIZZARD_API_URL = "https://us.api.blizzard.com/data/wow/"
 BNET_TOKEN_URI = "https://us.battle.net/oauth/token"
 BNET_AUTH_URI = "	https://us.battle.net/oauth/authorize"
 
-ITEM_ID = "82800"
 CAGE_ID = "82800"
 SPECIES_IDS = [3533, 3261, 3291, 3293, 3546, 3548, 3412, 1337]
 REGION = "en_US"
-IS_PET = True
 
 def get_realm_indexes(region="en_US", access_token="secret"):
     url = BLIZZARD_API_URL + f"realm/index?namespace=dynamic-us&locale={region}"
